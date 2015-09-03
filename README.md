@@ -11,7 +11,7 @@ Exercise to understand ruby objects.
 ### Getting the first test to pass
 1. Navigate into the exercise `cd week3/bank_account/`
 2. Run the test `ruby account_test.rb`
-3. You should see an error like like this:
+3. You may see an error like like this:
 
   ```bash
   account_test.rb:4:in `require_relative': cannot load such file -- wdi-aug/week3/bank_account/account (LoadError)
