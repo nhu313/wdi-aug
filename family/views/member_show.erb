@@ -1,0 +1,7 @@
+<h1>
+  <%= @member.first_name %>
+</h1>
+Age: <%= @member.age %>
+
+<br >
+Belongs to the <a href="/family/<%= @member.family_id %>"><%= @member.family.name %> </a>

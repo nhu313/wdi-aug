@@ -1,0 +1,17 @@
+
+<h1>The <%= @family.name %> Family</h1>
+
+<h2>Members</h2>
+<ul>
+  <% @family.members.each do |member| %>
+    <li><a href="/member/<%= member.id %>"><%= member.first_name %></a></li>
+  <% end %>
+</ul>
+
+<form method="POST" action="/<%= @family.id %>/member/create">
+  <label>First name</label>
+  <input type="text" name="[member][first_name]">
+  <label>Age</label>
+  <input type="number" name="[member][age]">
+  <input type="submit" value="Submit">
+</form>
